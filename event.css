@@ -1,0 +1,199 @@
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body{
+    margin:0px;
+	padding: 0px;
+    font-family: 'poppins', sans-serif;
+}
+html { 
+    scroll-behavior: smooth;
+  }
+section.counter {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(event.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.hero{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'poppins';
+}
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    color: #fff;
+}
+hr{
+    width: 50%;
+    margin: 30px auto;
+    border: 1.5px solid #FFF;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#counter{
+    font-size: 40px;
+    word-spacing: 20px;
+    font-family: 'poppins', sans-serif;
+}
+.btn {
+    justify-content: center;
+    display: flex;
+}
+.btn a{
+     width: 200px;
+     font-size: 17px;
+     padding: 20px 0px;
+     background-color: #81256c;
+     color: #fff;
+     display: inline-block;
+     line-height: 20px;
+     border-radius: 30px;
+     text-align: center;
+     margin-top: 700px;
+    }
+
+
+
+section.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(event2.jpg);
+    background-size: cover;
+}  
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p{
+    font-size: 20px;
+    
+    color: #fff;
+}
+.container1{
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1 .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-info .box .text h3{
+    font-weight: 500;
+    color: #FFF;
+    text-align: left;
+}
+.contact-from{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contact-from h1{
+    font-size: 50px;
+    color: #333;
+    font-weight: 500;
+}
+.contact-from .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-from .input-box input,
+.contact-from .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin-bottom: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact-from .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact-from .input-box input:focus ~ span,
+.contact-from .input-box input:valid ~ span,
+.contact-from .input-box textarea:focus ~ span,
+.contact-from .input-box textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact-from .input-box input[type="submit"]{
+    width: 100px;
+    background: #81256c;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 .contact-info{
+        margin-bottom: 40px;
+    }
+    .container1 .contact-info{
+        width: 100%;
+    }
+}

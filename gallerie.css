@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body{
+	margin:0px;
+	padding: 0px;
+	background-color:#eef8ff;
+	font-family: 'poppins', sans-serif;
+}
+a{
+	text-decoration:none;
+}
+.box{
+	width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 25px;
+	text-align: left;
+}
+
+.detail{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.detail a{
+	color:#222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 0px;
+    padding-left: 20px;
+}
+.detail p{
+	color:rgba(26,26,26,0.5);
+    padding-right: 0px;
+    padding-left: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'poppins', sans-serif;
+    margin: 50px 0;
+}
+
+.grille {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.grid-item{
+	transition: 400ms;
+}
+
+.grid-item:hover{
+	transform: scale(1.05);
+	transition: 400ms;
+}
