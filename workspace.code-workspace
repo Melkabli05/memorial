@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Desktop\\site"
+		},
+		{
+			"path": "..\\..\\..\\Desktop\\brief\\memorial"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "memorial"
+	}
+}

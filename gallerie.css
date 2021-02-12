@@ -54,13 +54,26 @@ h1 {
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px;
+	align-items: center;
 }
+
 
 .grid-item{
 	transition: 400ms;
+	align-items: center;
 }
 
 .grid-item:hover{
 	transform: scale(1.05);
 	transition: 400ms;
+}
+@media(max-width:375px){
+	.grid-item{
+		transition: none;
+	}
+	
+	.grid-item:hover{
+		transform: none;
+		transition: none;
+	}
 }
